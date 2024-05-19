@@ -42,7 +42,7 @@ public class StatService {
         int count = 0;
         long avg = avgSales(sales);
         for (long sale : sales) {
-            if (sale < avgSales(sales)) {
+            if (sale < avg) {
                 count++;
 
             }
@@ -54,7 +54,7 @@ public class StatService {
         int count = 0;
         long avg = avgSales(sales);
         for (long sale : sales) {
-            if (sale > avgSales(sales)) {
+            if (sale > avg) {
                 count++;
 
             }
